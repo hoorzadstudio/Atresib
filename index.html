@@ -88,22 +88,12 @@
       mix-blend-mode: screen;
       transition: all 0.3s ease-in-out;
       z-index: 2;
+      filter: drop-shadow(0 0 10px #c8a257); /* گلو در حالت عادی */
     }
 
     .logo:hover {
-      animation: glowPulse 1.5s infinite alternate ease-in-out;
-      filter: drop-shadow(0 0 10px #c8a257);
-    }
-
-    @keyframes glowPulse {
-      0% {
-        transform: scale(1);
-        filter: drop-shadow(0 0 5px #c8a257);
-      }
-      100% {
-        transform: scale(1.05);
-        filter: drop-shadow(0 0 20px #c8a257);
-      }
+      transform: scale(1.1); /* فقط بزرگتر شدن لوگو */
+      filter: drop-shadow(0 0 20px #c8a257); /* افزایش گلو */
     }
 
     .scroll-icon {
